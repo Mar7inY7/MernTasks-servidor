@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 
 const ProyectoSchema = mongoose.Schema({
-    nombre:{
+    nombre: {
         type: String,
         required: true,
         trim: true
     },
     creador: {
-        type: mongoose.Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId, 
         ref: 'Usuario'
     },
     creado: {

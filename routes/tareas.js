@@ -22,15 +22,15 @@ router.get('/',
 );
 
 // Actualizar tarea
-router.put('/:id',
+router.put('/:id', 
     auth,
     tareaController.actualizarTarea
-)
+);
 
-// Eliminar Tarea
-router.delete('/:id',
+// Eliminar tarea
+router.delete('/:id', 
     auth,
     tareaController.eliminarTarea
-)
+);
 
 module.exports = router;
